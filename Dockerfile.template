@@ -1,0 +1,7 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:latest-run
+
+WORKDIR /usr/src/app
+
+COPY test test
+
+CMD ["./test"]
